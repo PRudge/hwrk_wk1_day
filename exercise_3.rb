@@ -33,17 +33,14 @@ for countries in united_kingdom
 end
 
 # Use a loop to find the total population of the UK.
-# population = 0
-# puts "we are here for total pop"
-# population=0
-#
-# united_kingdom.each do |key, array|
-#   puts "#{key}-----"
-#   puts array
-#   population +=  united_kingdom[:population]
-# end
-#
-# # puts "population total is : #{population}"
+population=0
+counter=0
+for country in united_kingdom
+  population =+ country[:population]
+end
+p "Total population is #{population}"
+
+
 
 #
 
