@@ -29,13 +29,10 @@ falkirk4 = result
 
 
 # Reverse the positions of the stops in the array
-# I tried stops.reverse!
-# I tried stops = stops.reverse
-# They didn't work
+stops.reverse!
 
-r_stops = stops.reverse
-stops = r_stops
-# Print out all the stops using a for loop
+
+# # Print out all the stops using a for loop
 for station in stops
-  puts station
-end
+   puts station
+ end
