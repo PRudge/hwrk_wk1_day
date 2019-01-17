@@ -80,16 +80,9 @@ p "Avrils pet Monty is a #{users["Avril"][:pets][0][:species]}"
 p "Erik smallest lottery number:   #{users["Erik"][:lottery_numbers].min}"
 
 # Return an array of Avril's lottery numbers that are even
-avril_lottery_numbers = users["Avril"][:lottery_numbers]
-avril_even_numbers = []
-counter = 0
-for int in avril_lottery_numbers
-  if int % 2 === 0
-    avril_even_numbers[counter] = int #if int % 2 == 0
-    counter += 1
-  end
-end
-p "Avril's even number lottery numbers: #{avril_even_numbers} "
+avril_even_lottery_numbers = users["Avril"][:lottery_numbers]
+avril_even_lottery_numbers.delete_if {|n| n%2 != 0 }
+p "Avril's even number lottery numbers: #{avril_even_lottery_numbers} "
 
 # Erik is one lottery number short! Add the number 7 to be included in his lottery numbers
 p "Erik lottery number with 7 appended: " + users["Erik"][:lottery_numbers].push(7).to_s

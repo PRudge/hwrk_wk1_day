@@ -39,14 +39,3 @@ for country in united_kingdom
   population =+ country[:population]
 end
 p "Total population is #{population}"
-
-
-
-#
-
-
-
-
-
-
-   # end of push
